@@ -1,0 +1,327 @@
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* End Reset */
+
+/*Fonts*/
+@font-face {
+	font-family: gothamBold;
+	src: url(../fonts/gotham-bold.ttf);
+}
+@font-face {
+	font-family: gothamMedium;
+	src: url(../fonts/gotham-medium.ttf);
+}
+@font-face {
+	font-family: gothamBook;
+	src: url(../fonts/gotham-book.ttf);
+}
+@font-face {
+	font-family: proximaNova;
+	src: url(../fonts/ProximaNova-Regular.otf);
+}
+/*End fonts*/
+
+body {
+	background-color: #CCCCCC;
+}
+#container {
+	width: 1200px;
+	background-color: #fff;
+	margin: 0 auto;
+}
+.row {
+	overflow: hidden;
+}
+.row .col {
+	float: left;
+}
+.rectangle_underline {
+	position: relative;
+	width: 240px;
+	height: 3px;
+	margin: 20px auto 30px auto;
+	background-color: #303030;
+}
+/*************************
+==========Header==========
+**************************/
+#header {
+	height: 20px;
+	padding: 40px 150px;
+}
+#logo {
+	float: left;
+	font-family: gothamBook;
+	font-size: 25px;
+	color: #4C4C4C;
+}
+#menu {
+	float: right;
+}
+#menu ul li {
+	display: inline-block;
+	list-style-type: none;
+}
+#menu ul li:nth-child(-n+2) {
+	margin-right: 100px;
+}
+
+#menu ul li a {
+	position: relative;
+	font-family: gotham-medium;
+	font-size: 12px;
+	color: #A7A7A7;
+	text-decoration: none;
+}
+#menu ul li a:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #A7A7A7;
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.3s ease-in-out 0s;
+}
+#menu ul li a:hover:before {
+	visibility: visible;
+	transform: scaleX(1);
+}
+/***********************
+==========Hero==========
+************************/
+
+#hero {
+	width: 1200px;
+	height: 500px;
+	background: url(../images/hero-bg.png) no-repeat;
+}
+#hero_text {
+	position: relative;
+	top: 170px;
+	text-align: center;
+}
+#hero_text h1 {
+	font-family: gothamBold;
+	font-size: 40px;
+	color: #303030;
+	line-height: 50px;
+}
+#hero_text p {
+	font-family: Georgia;
+	font-style: italic;
+	font-size: 16px;
+	color: #5A5A5A;
+	line-height: 30px;
+}
+#hero_button {
+	position: relative;
+	text-align: center;
+	top: 240px;
+}
+/***********************
+==========Work==========
+************************/
+#work {
+	padding: 50px 150px 10px 150px;
+}
+#work_text {
+	margin-bottom: 50px;
+	text-align: center;
+}
+#work_text h1 {
+	font-family: gothamBold;
+	font-size: 30px;
+	color: #303030;
+	line-height: 25px;
+}
+#work_text p {
+	font-family: proximaNova;
+	font-size: 16px;
+	color: #5A5A5A;
+	line-height: 25px;
+}
+#work .thumbnail:nth-child(-n+2){
+	margin-right: 60px;
+}
+
+#work .thumbnail {
+	margin-bottom: 60px;
+}
+/***********************
+==========Team==========
+************************/
+#team {
+	width: 900px;
+	height: 472px;
+	padding: 50px 150px 10px 150px;
+	background: url(../images/team-bg.png) no-repeat;
+}
+#team_text {
+	text-align: center;
+	margin-bottom: 50px;
+}
+#team .rectangle_underline {
+	width: 184px;
+}
+#team_text h1 {
+	font-family: gothamBold;
+	font-size: 30px;
+	color: #303030;
+	line-height: 25px;
+}
+#team_text p {
+	font-family: proximaNova;
+	font-size: 16px;
+	color: #5A5A5A;
+	line-height: 25px;
+}
+.teammate {
+	width: 216px;
+	height: 216px;
+	background: url(../images/teammate-bg.png) no-repeat;
+}
+.teammate_innerWrapper {
+	margin-top: 20px;
+	text-align: center;
+}
+.teammate_text {
+	line-height: 25px;
+}
+.teammate_text h2 {
+	font-family: gothamBold;
+	font-size: 16px;
+}
+.teammate_text p {
+	font-family: Georgia;
+	font-style: italic;
+	font-size: 12px;
+}
+.teammate .social_icons nav a {
+	line-height: 50px;
+}
+.teammate .social_icons nav .skype_icon,
+.teammate .social_icons nav .twitter_icon,
+.teammate .social_icons nav .dribbble_icon{
+	margin-right: 20px;
+}
+#team .row .col:nth-child(-n+3) {
+	margin-right: 12px;
+}
+/**************************
+==========Contact==========
+***************************/
+#contact {
+	padding: 50px 150px 10px 150px;
+}
+#contact .row {
+	margin-bottom: 70px;
+}
+#contact_text {
+	margin-bottom: 100px;
+	text-align: center;
+}
+#contact_text h1 {
+	font-family: gothamBold;
+	font-size: 30px;
+	color: #303030;
+}
+#contact .rectangle_underline {
+	width: 180px;
+	
+}
+#map {
+	width: 328px;
+	height: 328px;
+	margin-right: 26px;
+}
+#map p {
+	margin-bottom: 40px;
+}
+#email p {
+	margin-bottom: 40px;
+}
+
+#map p,
+#email p {
+	font-family: proximaNova;
+	font-size: 16px;
+	color: #5A5A5A;
+}
+#contact form textarea {
+	width: 510px;
+	height: 210px;
+	padding: 25px 0 0 30px;
+	resize: none;
+	background-color: #f2f2f2;
+	font-family: Georgia;
+	font-style: italic;
+	font-size: 16px;
+	color: #8F8F8F;
+}
+#email_input {
+	margin-top: 20px;
+}
+#contact form input[type=text] {
+	width: 282px;
+	height: 60px;
+	padding-left: 30px;
+	margin-right: 20px;
+	border: 1px solid rgba(0,0,0,.25);
+	background-color: #f2f2f2;
+	font-family: Georgia;
+	font-style: italic;
+	font-size: 16px;
+	color: #8F8F8F;
+}
+#contact form #send_button {
+	width: 205px;
+	height: 60px;
+	background-color: #6995A9;
+	border: 2px solid #fff;
+	font-family: gothamBold;
+	font-size: 16px;
+	color: #fff;
+}
+/*************************
+==========Footer==========
+**************************/
+#footer {
+	width: 900px;
+	height: 10px;
+	background-color: #4f4f4f;
+	padding: 35px 150px;
+	font-family: proximaNova;
+	font-size: 16px;
+	color: #6E6E6E;
+}
+#footer #address {
+	float: left;
+}
+#address span {
+	color: #949494;
+}
+#footer #copyright {
+	float: right;
+}
