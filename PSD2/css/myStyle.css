@@ -1,0 +1,561 @@
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* End Reset */
+
+@font-face {
+	font-family: montserratRegular;
+	src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+	font-family: montserratBold;
+	src: url(../fonts/Montserrat-Bold.ttf);
+}
+#page_wrapper {
+	width: 2000px;
+	background-color: #fff;
+}
+/*************************
+==========Header==========
+**************************/
+#header {
+	width: 100%;
+	height: 967px;
+	background: url(../images/header-bg.png) no-repeat;
+}
+/*
+  Menu
+*/
+#menu {
+	width: 100%;
+	height: 137px;
+	padding: 50px 95px 50px 95px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	background-color: rgba(0,0,0,.60);
+}
+#menu #logo {
+	float: left;
+}
+#menu #navbar {
+	float: right;
+}
+#menu #navbar ul {
+	display: inline;
+	list-style: none;
+}
+#menu #navbar ul li {
+	display: inline-block;
+	font-size: 18px;
+	margin-right: 50px;
+}
+#menu #navbar ul li:nth-child(4) {
+	margin-right: 85px;
+}
+#menu #navbar ul li a {
+	position: relative;
+	font-family: montserratRegular;
+	color: #fff;
+	text-decoration: none;
+}
+
+#menu #navbar ul li a:hover {
+	color: #39B9EF;
+}
+#menu #navbar ul li a:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #39B9EF;
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.3s ease-in-out 0s;
+}
+#menu #navbar ul li a:hover:before {
+	visibility: visible;
+	transform: scaleX(1);
+}
+
+#menu #navbar nav form {
+	display: inline;
+}
+/*
+  Header Title
+*/
+#header_title {
+	position: relative;
+	top: 290px;
+	text-align: center;
+}
+#header_title h1 ,
+#header_title p {
+	color: #fff;
+}
+#header_title h1 {
+	font-family: montserratBold;
+	font-size: 72px;
+	
+}
+#header_title h1 span {
+	color: #2EBAEE;
+}
+#header_title p {
+	font-family: montserratRegular;
+	font-size: 24px;
+}
+#header_title a {
+	display: block;
+	width: 216px;
+	height: 51px;
+	margin: 70px auto;
+	text-align: center;
+	line-height: 51px;
+	background-color: #2EBAEE;
+	border-radius: 25px;
+	font-family: montserratBold;
+	font-size: 18px;
+	color: #fff;
+	text-decoration: none;
+}
+/***************************
+==========Services==========
+****************************/
+/****************
+-----Row one-----
+*****************/
+#row_one {
+	width: 2000px;
+}
+/*********************
+     Our services
+**********************/
+#our_services {
+	position: relative;
+	top: 68px;
+	width: 1300px;
+	margin: 0 auto;
+
+}
+#our_services_title {
+	margin-bottom: 84px;
+	text-align: center;
+	font-family: montserratRegular;
+	font-size: 48px;
+}
+.our_services_row {
+	overflow: hidden;
+}
+.our_services_col {
+	float: left;
+	margin: 75px 30px 0 0;
+}
+.our_services_col h1 {
+	margin-top: 46px;
+	font-family: montserratRegular;
+	font-size: 24px;
+	color: #242424;
+}
+.our_services_col p {
+	margin-top: 30px;
+	font-family: montserratRegular;
+	font-size: 14px;
+	color: #878787;
+	line-height: 24px;
+}
+#our_services_button {
+	margin-top: 65px;
+	text-align: center;
+}
+#our_services_button a {
+	display: block;
+	width: 151px;
+	height: 44px;
+	margin: 65px auto 0 auto;
+	line-height: 44px;
+	background-color: #2EBAEE;
+	border-radius: 25px;
+	font-family: montserratBold;
+	font-size: 14px;
+	color: #fff;
+	text-decoration: none;	
+}
+/*
+  Mockup
+*/
+#services_mockup {
+	width: 2000px;
+	height: 1681px;
+	overflow: hidden;
+	background: url(../images/services-bg.png) no-repeat;
+}
+#mockup_textone {
+	margin-top: 375px;
+	padding: 0 175px 0 348px;
+	overflow: hidden;
+}
+.mockup_textone_col {
+	float: left;
+}
+#mockup_textone .mockup_text {
+	margin: 90px 10px 0 0;
+}
+#mockup_textone .mockup_text h1 {
+	font-family: montserratRegular;
+	font-size: 36px;
+}
+#mockup_textone .mockup_text p {
+	font-family: montserratRegular;
+	font-size: 14px;
+	color: #878787;
+	line-height: 30px;
+	
+}
+#mockup_textone .mockup_text a {
+	display: block;
+	width: 151px;
+	height: 44px;
+	margin-top: 50px;
+	line-height: 44px;
+	background-color: #2EBAEE;
+	border-radius: 25px;
+	font-family: montserratBold;
+	font-size: 14px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;	
+}
+#mockup_texttwo { 
+	padding: 155px 350px 0 348px;
+	overflow: hidden;
+}
+.mockup_texttwo_col {
+	float: left;
+}
+#mockup_texttwo .mockup_text {
+	margin-left: 120px;
+}
+#mockup_texttwo .mockup_text h1 {
+	margin-top: 90px;
+	font-family: montserratRegular;
+	font-size: 36px;
+	color: #fff;
+}
+#mockup_texttwo .mockup_text p {
+	margin-top: 55px;
+	font-family: montserratRegular;
+	font-size: 14px;
+	color: #fff;
+	line-height: 30px;
+}
+
+
+#mockup_texttwo .mockup_text a {
+	display: block;
+	width: 151px;
+	height: 44px;
+	margin-top: 50px;
+	line-height: 44px;
+	background-color: #fff;
+	border-radius: 25px;
+	font-family: montserratBold;
+	font-size: 14px;
+	color: #2EBAEE;
+	text-decoration: none;
+	text-align: center;
+}
+/*
+  Row two
+*/
+#row_two {
+	height: 669px;
+	overflow: hidden;
+}
+#row_two div {
+	float: left;
+}
+#row_two_text {
+	padding-left: 75px;
+}
+#row_two_text h1 {
+	margin-top: 110px;
+	font-family: montserratRegular;
+	font-size: 72px;
+	
+}
+#row_two_text p {
+	margin-top: 75px;
+	font-family: montserratRegular;
+	font-size: 14px;
+	color: #878787;
+	line-height: 30px;
+}
+#row_two_text a {
+	display: block;
+	width: 151px;
+	height: 44px;
+	margin-top: 55px;
+	line-height: 44px;
+	background-color: #2EBAEE;
+	border-radius: 25px;
+	font-family: montserratBold;
+	font-size: 14px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+}
+/*
+  Row three
+ */
+#services #row_three {
+  overflow: hidden;
+}
+#services #row_three div {
+ position: relative;
+ width: 500px;
+ height: 434px;
+ float: left;
+ 
+}
+#services #row_three div:hover:before {
+ content: "";
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(46, 186, 238, .65);
+} 
+/***********************
+==========Team==========
+************************/
+#team {
+	width: 100%;
+	height: 855px;
+	padding: 100px 375px 100px 348px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+#team_text {
+}
+#team_text h1 {
+	font-family: montserratBold;
+	font-size: 72px;
+	color: #232424;
+}
+#team_text h1 span {
+	color: #2EBAEE;
+}
+#team_profile {
+	margin-top: 110px;
+	overflow: hidden;
+}
+#team_profile div {
+	float: left;
+	text-align: center;
+}
+#team_profile #profile_one {
+	margin-left: 20px;
+}
+#team_profile div:nth-child(-n+3) {
+	margin-right: 75px;
+}
+#team_profile div h2 {
+	font-family: montserratRegular;
+	font-size: 36px;
+}
+#team_profile div p {
+	font-family: montserratRegular;
+	font-size: 14px;
+	color: #878787;
+}
+#team_profile div a {
+	display: block;
+	width: 151px;
+	height: 44px;
+	margin: 25px auto 0 auto;
+	line-height: 44px;
+	background-color: #2EBAEE;
+	border-radius: 25px;
+	font-family: montserratBold;
+	font-size: 14px;
+	color: #fff;
+	text-decoration: none;
+}
+/**************************
+==========Contact==========
+***************************/
+#contact {
+	width: 100%;
+	height: 724px;
+	padding: 135px 350px 130px 348px;
+	background: url(../images/contacts-bg.png) no-repeat;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+#contact_innerWrapper {
+	overflow: hidden;
+}
+/*********************
+-----Contact text-----
+**********************/
+#contact_text {
+	float: left;
+	margin-right: 80px;
+}
+#contact_form {
+	float: left;
+}
+#contact_text h1 {
+	font-family: montserratBold;
+	font-size: 72px;
+	color: #fff;
+}
+#contact_text #address {
+	margin-top: 58px;
+	font-family: montserratRegular;
+	font-size: 18px;
+	color: #878787;
+}
+#contact_text #phone {
+	margin-top: 23px;
+}
+#contact_text #email {
+	margin-top: 12px;
+}
+#contact_text #phone,
+#contact_text #email {
+	font-family: montserratRegular;
+	font-size: 30px;
+	color: #39B9EF;
+}
+#contact_text #phone span,
+#contact_text #email span {
+	color: #878787;
+}
+#contact_text #social_icons{
+	margin-top: 65px;
+}
+#contact_text #social_icons span {
+	margin-right: 25px;
+}
+
+/*********************
+-----Contact Form-----
+**********************/
+#contact_form form {
+	text-align: center;
+}
+#name_input input[type=text],
+#email_input input[type=text] {
+	width: 636px;
+	height: 61px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;  /* Opera/IE 8+ */
+
+}
+#email_message textarea {
+	width: 636px;
+	height: 204px;
+	resize: none;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;  /* Opera/IE 8+ */
+}
+#name_input input[type=text],
+#email_input input[type=text],
+#email_message textarea {
+	margin-bottom: 20px;
+	padding-left: 15px;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid #535353;
+	font-family: montserratRegular;
+	font-size: 14px;
+	color: #fff;
+	
+}
+::-webkit-input-placeholder {
+	color: #fff;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #fff;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff; 
+}
+
+:-ms-input-placeholder {  
+   color: #fff;  
+}
+#contact_form form button {
+	width: 151px; 
+	height: 44px;
+	margin-top: 10px;
+	background-color: #2EBAEE;
+	border: none;
+	border-radius: 25px;
+	font-family: montserratBold;
+	font-size: 14px;
+	color: #fff;
+	cursor: pointer;
+}
+/*************************
+==========Footer==========
+**************************/
+#footer {
+	width: 100%;
+	height: 138px;
+	padding: 65px 350px 65px 350px;
+	background-color: #000000;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+#footer #footer_menu {
+	float: left;
+}
+#footer #footer_menu nav ul {
+	list-style: none;
+}
+#footer #footer_menu nav ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+#footer #footer_menu nav ul li a {
+	text-decoration: none;
+}
+#footer #copyright {
+	float: right;
+
+}
+#footer #footer_menu nav ul li a,
+#footer #copyright {
+	font-family: montserratBold;
+	font-size: 14px;
+	color: #B2B2B2;
+}
