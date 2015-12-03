@@ -41,9 +41,9 @@ time, mark, audio, video {
 	height: 967px;
 	background: url(../images/header-bg.png) no-repeat;
 }
-/*
-  Menu
-*/
+/*************
+-----Menu-----
+**************/
 #menu {
 	width: 100%;
 	height: 137px;
@@ -91,22 +91,60 @@ time, mark, audio, video {
 	background-color: #39B9EF;
 	visibility: hidden;
 	transform: scaleX(0);
-	transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out;
 }
 #menu #navbar ul li a:hover:before {
 	visibility: visible;
 	transform: scaleX(1);
 }
-
 #menu #navbar nav form {
 	display: inline;
+	position: relative;
 }
-/*
-  Header Title
-*/
+#menu #navbar nav form .search{
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	width: 600px;
+	max-width: 0;
+	height: 50px;
+	padding-left: 15px;	
+	border: 1px solid #535353;
+	opacity: 0;
+	z-index: -1;
+	transition: all .5s ease-in-out;
+	background-color: rgba(0, 0, 0, .65);
+	font-family: montserratRegular;
+	color: #fff;
+}
+#menu #navbar nav form .search.expanded {
+	max-width: 600px;
+	z-index: 0;
+	opacity: 1;
+}
+
+#menu #navbar nav form #search_icon {
+	cursor: pointer;
+}
+
+#menu #navbar nav form .search::-webkit-input-placeholder{
+	color: #2EBAEE;
+}
+#menu #navbar nav form .search:-moz-placeholder { /* Firefox 18- */
+   color: #2EBAEE;  
+}
+#menu #navbar nav form .search::-moz-placeholder {  /* Firefox 19+ */
+   color: #2EBAEE; 
+}
+#menu #navbar nav form .search:-ms-input-placeholder{  
+   color: #2EBAEE;  
+}
+/*********************
+-----Header Title-----
+**********************/
 #header_title {
 	position: relative;
-	top: 290px;
+	top: 275px;
 	text-align: center;
 }
 #header_title h1 ,
@@ -142,15 +180,18 @@ time, mark, audio, video {
 /***************************
 ==========Services==========
 ****************************/
+#services {
+	width: 100%;
+}
 /****************
 -----Row one-----
 *****************/
-#row_one {
-	width: 2000px;
-}
 /*********************
      Our services
 **********************/
+#our_services_wrapper {
+	height: 450px;
+}
 #our_services {
 	position: relative;
 	top: 68px;
@@ -159,17 +200,17 @@ time, mark, audio, video {
 
 }
 #our_services_title {
-	margin-bottom: 84px;
 	text-align: center;
 	font-family: montserratRegular;
 	font-size: 48px;
 }
 .our_services_row {
+	margin-top: 144px;
 	overflow: hidden;
 }
 .our_services_col {
 	float: left;
-	margin: 75px 30px 0 0;
+	margin: 0 30px 0 0;
 }
 .our_services_col h1 {
 	margin-top: 46px;
@@ -178,21 +219,21 @@ time, mark, audio, video {
 	color: #242424;
 }
 .our_services_col p {
-	margin-top: 30px;
+	margin-top: 25px;
 	font-family: montserratRegular;
 	font-size: 14px;
 	color: #878787;
 	line-height: 24px;
 }
 #our_services_button {
-	margin-top: 65px;
+	margin-top: 56px;
 	text-align: center;
 }
 #our_services_button a {
 	display: block;
 	width: 151px;
 	height: 44px;
-	margin: 65px auto 0 auto;
+	margin: 0 auto;
 	line-height: 44px;
 	background-color: #2EBAEE;
 	border-radius: 25px;
@@ -201,9 +242,9 @@ time, mark, audio, video {
 	color: #fff;
 	text-decoration: none;	
 }
-/*
-  Mockup
-*/
+/****************
+     Mockup          
+*****************/
 #services_mockup {
 	width: 2000px;
 	height: 1681px;
@@ -285,9 +326,9 @@ time, mark, audio, video {
 	text-decoration: none;
 	text-align: center;
 }
-/*
-  Row two
-*/
+/****************
+-----Row two-----
+*****************/
 #row_two {
 	height: 669px;
 	overflow: hidden;
@@ -325,9 +366,9 @@ time, mark, audio, video {
 	text-decoration: none;
 	text-align: center;
 }
-/*
-  Row three
- */
+/******************
+-----Row three-----
+ ******************/
 #services #row_three {
   overflow: hidden;
 }
@@ -351,7 +392,7 @@ time, mark, audio, video {
 #team {
 	width: 100%;
 	height: 855px;
-	padding: 100px 375px 100px 348px;
+	padding: 85px 375px 100px 348px;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -366,8 +407,11 @@ time, mark, audio, video {
 #team_text h1 span {
 	color: #2EBAEE;
 }
+/*********************
+-----Team Profile-----
+**********************/
 #team_profile {
-	margin-top: 110px;
+	margin-top: 94px;
 	overflow: hidden;
 }
 #team_profile div {
@@ -375,12 +419,13 @@ time, mark, audio, video {
 	text-align: center;
 }
 #team_profile #profile_one {
-	margin-left: 20px;
+	margin-left: 30px;
 }
 #team_profile div:nth-child(-n+3) {
-	margin-right: 75px;
+	margin-right: 81px;
 }
 #team_profile div h2 {
+	margin-top: 20px;
 	font-family: montserratRegular;
 	font-size: 36px;
 }
@@ -422,7 +467,7 @@ time, mark, audio, video {
 **********************/
 #contact_text {
 	float: left;
-	margin-right: 80px;
+	margin-right: 87px;
 }
 #contact_form {
 	float: left;
@@ -479,6 +524,7 @@ time, mark, audio, video {
 #email_message textarea {
 	width: 636px;
 	height: 204px;
+	padding-top: 20px;
 	resize: none;
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
@@ -496,19 +542,27 @@ time, mark, audio, video {
 	color: #fff;
 	
 }
-::-webkit-input-placeholder {
+#name_input input[type=text]::-webkit-input-placeholder,
+#email_input input[type=text]::-webkit-input-placeholder,
+#email_message textarea::-webkit-input-placeholder {
 	color: #fff;
 }
 
-:-moz-placeholder { /* Firefox 18- */
+#name_input input[type=text]:-moz-placeholder,
+#email_input input[type=text]:-moz-placeholder,
+#email_message textarea:-moz-placeholder { /* Firefox 18- */
    color: #fff;  
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
+#name_input input[type=text]::-moz-placeholder,
+#email_input input[type=text]::-moz-placeholder,
+#email_message textarea::-moz-placeholder {  /* Firefox 19+ */
    color: #fff; 
 }
 
-:-ms-input-placeholder {  
+#name_input input[type=text]:-ms-input-placeholder,
+#email_input input[type=text]:-ms-input-placeholder,
+#email_message textarea:-ms-input-placeholder {  
    color: #fff;  
 }
 #contact_form form button {

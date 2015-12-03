@@ -4,12 +4,19 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title> PSD2 </title>
+		<!-- JQuery Library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- My JavaScript -->
+		<script src="js/expandSearch.js"></script>
+		<!-- My CSS -->
 		<link rel="stylesheet" href="css/myStyle.css">
 	</head>
 	<body>
+		<!-- Page wrapper -->
 		<div id="page_wrapper">
 			<!-- Header -->
 			<div id="header">
+				<!-- Menu -->
 				<div id="menu">
 					<div id="logo">
 						<a href="#"><img src="images/logo.png"/></a>
@@ -23,11 +30,13 @@
 								<li><a href="#">Contact us</a></li>							
 							</ul>
 							<form>
-								<img src="images/search-icon.png"/>
+								<input class="search" type="search" name="search" placeholder="Search">
+								<img id="search_icon" src="images/search-icon.png"/>
 							</form>
 						</nav>
 					</div>
 				</div>
+				<!-- End of menu -->
 				<div id="header_title">
 					<h1><span>Austera</span> is simple PSD template</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -39,50 +48,52 @@
 			<div id="services">
 				<!-- Row one -->
 				<div id="row_one">
-					<div id="our_services">
-						<h1 id="our_services_title">Our services</h1>
-						<div class="our_services_row">
-							<div class="our_services_col">
-								<img src="images/responsive_design_img.png"/>
-								<h1>Responsive design</h1>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur<br>
-									adipiscing elit. Quisque molestie purus a<br>
-									felis condimentum molestie.
-								</p>
+					<div id="our_services_wrapper">
+						<div id="our_services">
+							<h1 id="our_services_title">Our services</h1>
+							<div class="our_services_row">
+								<div class="our_services_col">
+									<img src="images/responsive_design_img.png"/>
+									<h1>Responsive design</h1>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur<br>
+										adipiscing elit. Quisque molestie purus a<br>
+										felis condimentum molestie.
+									</p>
+								</div>
+								<div class="our_services_col">
+									<img src="images/endless_security_img.png"/>
+									<h1>Endless Security</h1>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur<br>
+										adipiscing elit. Quisque molestie purus a<br>
+										felis condimentum molestie. Etiam a<br>
+										ullamcorper odio.
+									</p>
+								</div>
+								<div class="our_services_col">
+									<img src="images/incredible_features_img.png"/>
+									<h1>Incredible features</h1>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur<br>
+										adipiscing elit. Quisque molestie purus a<br>
+										felis condimentum molestie.
+									</p>						
+								</div>
+								<div class="our_services_col">
+									<img src="images/fresh_ideas_img.png"/>
+									<h1>Fresh ideas</h1>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur<br>
+										adipiscing elit. Quisque molestie purus a<br>
+										felis condimentum molestie. Etiam a<br>
+										ullamcorper odio.
+									</p>
+								</div>
 							</div>
-							<div class="our_services_col">
-								<img src="images/endless_security_img.png"/>
-								<h1>Endless Security</h1>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur<br>
-									adipiscing elit. Quisque molestie purus a<br>
-									felis condimentum molestie. Etiam a<br>
-									ullamcorper odio.
-								</p>
+							<div id="our_services_button">
+								<a href="#">Check services</a>
 							</div>
-							<div class="our_services_col">
-								<img src="images/incredible_features_img.png"/>
-								<h1>Incredible features</h1>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur<br>
-									adipiscing elit. Quisque molestie purus a<br>
-									felis condimentum molestie.
-								</p>						
-							</div>
-							<div class="our_services_col">
-								<img src="images/fresh_ideas_img.png"/>
-								<h1>Fresh ideas</h1>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur<br>
-									adipiscing elit. Quisque molestie purus a<br>
-									felis condimentum molestie. Etiam a<br>
-									ullamcorper odio.
-								</p>
-							</div>
-						</div>
-						<div id="our_services_button">
-							<a href="#">Check services</a>
 						</div>
 					</div>
 					<div id="services_mockup">
@@ -144,25 +155,21 @@
 					<a href="#">
 						<div>
 							<img src="images/lorem_ipsum_img.png" />
-							<!--<h1>Lorem ipsum  dolor sit amet</h1>-->
 						</div>
 					</a>
 					<a href="#">
 						<div>
 							<img src="images/nunc_fringilla_img.png" />
-							<!--<h1>Nunc fringilla  tortor urna</h1>-->
 						</div>
 					</a>
 					<a href="#">
 						<div>
 							<img src="images/nulla_pulvinar_img.png" />
-							<!--<h1>Nulla pulvinar  pulvinar est</h1>-->
 						</div>
 					</a>
 					<a href="#">
 						<div>
 							<img src="images/fusce_at_img.png" />
-							<!--<h1>Fusce at  diam condim</h1>-->
 						</div>
 					</a>
 				</div>
@@ -205,6 +212,8 @@
 					</div>
 				</div>
 			</div>
+			<!-- End of team -->
+			<!-- Contact -->
 			<div id="contact">
 				<div id="contact_innerWrapper">
 					<div id="contact_text">
@@ -231,11 +240,13 @@
 							<div id="email_message">
 								<textarea name="message" placeholder="Your message"></textarea>
 							</div>
-							<button id="send_button">SEND</button>							
+							<button id="send_button">Send message</button>							
 						</form>
 					</div>
 				</div>
 			</div>
+			<!-- End of contact -->
+			<!-- Footer -->
 			<div id="footer">
 				<div id="footer_menu">
 					<nav>
@@ -251,6 +262,8 @@
 					<p>Copyright &copy 2015. All rights reserved by MountTec</p>
 				</div>
 			</div>
+			<!-- End of footer -->
 		</div>
+		<!-- End of page wrapper -->
 	</body>
 </html>
