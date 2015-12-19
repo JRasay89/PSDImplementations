@@ -48,6 +48,7 @@ time, mark, audio, video {
 =====Header=====
 ****************/
 #header {
+	position: relative;
 	width: 100%;
 }
 /***************
@@ -225,6 +226,52 @@ time, mark, audio, video {
 }
 #dropdown_games ul li {
 	margin: 0 0 15px 0;
+}
+/********************
+     Header Brief                   
+*********************/
+#header_brief {
+	position: absolute;
+	width: 437px;
+	height: 260px;
+	top: 500px;
+	left: 163px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	background-color: rgba(0, 0, 0, .30);
+	color: #fff;
+}
+#header_brief h2 {
+	margin: 40px 0 0 45px;
+	font-family: montserratBlack;
+	font-size: 24px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+#header_brief p {
+	margin: 15px 0 0 45px;
+	font-family: montserratLight;
+	font-size: 16px;
+	text-transform: uppercase;
+	line-height: 24px;
+}
+#header_brief #brief_button {
+	position: relative;
+	width: 194px;
+	height: 41px;
+	margin: 40px auto 0 auto;
+}
+#header_brief #brief_button a {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	line-height: 41px;
+	color: #fff;
+	border: 1px solid #B0B0B0;
 }
 /*************
 =====News=====
@@ -581,6 +628,9 @@ Pointer Arrow
 /*******************
      Press Text
 ********************/
+div[id*="press_"] a {
+	text-decoration: none;
+}
 .press_text {
 	position: relative;
 	padding: 53px 0 0 30px;
@@ -932,9 +982,16 @@ Pointer Arrow
 		-moz-box-sizing: border-box;
 		
 }
+.bottom_footer_menu_wrapper #bottom_menu_list h2 {
+	color: #333333;
+}
 .bottom_footer_menu_wrapper #bottom_menu_list ul li:nth-child(-n+4) {
 	margin: 0 17px 0 0;
 }
+.bottom_footer_menu_wrapper #bottom_menu_list ul li a {
+	color: #727272;
+}
+
 .bottom_footer_menu_wrapper #footer_logo_2 {
 	width: 200px;
 	height: 123px;
@@ -953,6 +1010,7 @@ Pointer Arrow
 }
 .bottom_footer_menu_wrapper #bottom_footer_social h2 {
 	margin: 0 0 5px 0;
+	color: #333333;
 }
 .bottom_footer_menu_wrapper #bottom_footer_social ul li:nth-child(-n+3) {
 	margin: 0 3px 0 0;

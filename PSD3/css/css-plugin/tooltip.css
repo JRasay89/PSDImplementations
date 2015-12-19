@@ -10,11 +10,11 @@ div#mcTooltip
     border-width: 1px;   
     color:#eee; 
     border-color:transparent;
-    padding:5px;
+    padding: 1px;
     font-size: 12px;
     font-family: Verdana, Arial;
     border-radius:2px;
-    background-color: #333;
+    background-color: #fff;
     box-shadow: none;
 }
 
