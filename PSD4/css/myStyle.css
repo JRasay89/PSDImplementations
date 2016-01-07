@@ -132,6 +132,9 @@ html {
 	float: left;
 	vertical-align: middle;
 }
+/*****************
+     Nav Menu
+******************/
 #nav_menu {
 	height: 100%;
 	float: left;
@@ -169,6 +172,9 @@ html {
 	bottom: 0;
 	background-color: rgba(0, 0, 0, .30);
 }
+/*******************
+     Nav Social
+********************/
 #nav_social {
 	height: 100%;
 	float: right;
@@ -366,7 +372,7 @@ About us text
 .services_row {
 	width: 100%;
 	height: 561px;
-	padding: 0 268px 0 268px;
+	padding: 0 0 0 268px;
 	overflow: hidden;
 }
 .services_row .services_text,
@@ -375,10 +381,10 @@ About us text
 }
 #services_one .services_text,
 #services_three .services_text {
-	margin: 0 200px 0 0;
+	margin: 0 230px 0 0;
 }
 #services_two .services_text {
-	margin: 0 0 0 200px;
+	margin: 0 0 0 230px;
 }
 .services_text h1 {
 	margin: 20px 0 0 0;
@@ -406,8 +412,7 @@ About us text
 	font-family: robotoRegular;
 	font-size: 18px;
 	text-align: right;
-	color: #fff;
-	
+	color: #fff;	
 }
 #services_one .services_text h1,
 #services_one .services_text h2 {
@@ -644,7 +649,6 @@ About us text
 }
 .process_content_wrapper .process_content:nth-child(-n+4) {
 	margin: 0 30px 0 0;
-	
 }
 #process_two img,
 #process_four img{
@@ -836,8 +840,7 @@ About us text
 }
 .blogs_content_wrapper {
 	width: 100%;
-	height: 454px;
-	
+	height: 454px;	
 }
 .blogs_content_wrapper .blogs_content {
 	float: left;
@@ -849,7 +852,6 @@ About us text
 	position: relative;
 	top: 60px;
 	text-align: center;
-	
 }
 .blogs_content_wrapper a {
 	font-family: robotoLight;
@@ -904,6 +906,9 @@ About us text
 	height: 403px;
 	padding: 0 298px 0 283px;
 }
+/**********************
+     Contacts Form
+***********************/
 #contacts_form_wrapper {
 	width: 270px;
 	height: 100%;
@@ -930,7 +935,6 @@ About us text
 #contacts_form_wrapper textarea:focus {
 	outline: none;
 	border-color: #E22E2E;
-	
 }
 #contacts_form_wrapper textarea {
 	resize: none;
@@ -948,12 +952,14 @@ About us text
 	text-transform: uppercase;
 	cursor: pointer;
 }
+/*************************
+     Contacts Address
+**************************/
 #contacts_address {
 	width: 285px;
 	height: 100%;
 	float: right;
 	background: url(../images/contacts_address_bg.png) no-repeat;
-	text-align: center;
 }
 #contacts_address img {
 	display: block;
@@ -966,12 +972,35 @@ About us text
 	text-transform: uppercase;
 	color: #E1E1E1;
 }
-#contacts_address #place_icon,
-#contacts_address #email_icon {
-	margin: 30px auto 14px auto;
+#contacts_address #place_wrapper {
+	width: 130px;
+	height: 90px;
+	margin: 30px 0 0 70px;
+	text-align: center;
 }
-#contacts_address #phone_icon {
-	margin: 20px auto 15px auto;
+#contacts_address #place_wrapper #place_icon {
+	margin:0 auto 15px auto;
+}
+#contacts_address #place_wrapper p {
+	margin: 0 0 0 5px;
+}
+#contacts_address #email_wrapper {
+	width: 157px;
+	height: 60px;
+	margin: 0 0 0 57px;
+	text-align: center;
+}
+#contacts_address #email_wrapper #email_icon {
+	margin: 8px auto 15px auto;
+}
+#contacts_address #phone_wrapper {
+	width: 130px;
+	height: 90px;
+	margin: 0 0 0 70px;
+	text-align: center;
+}
+#contacts_address #phone_wrapper #phone_icon {
+	margin: 12px auto 14px auto;
 }
 /******************
 -----Copyright-----
