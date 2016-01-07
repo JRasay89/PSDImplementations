@@ -10,6 +10,6 @@ Below are demos of my PSD implementations
 
 2.[PSD2](http://jrasay89.github.io/PSDImplementations/PSD2/)
 
-3.[PSD3](http://jrasay89.github.io/PSDImplementations/PSD3/) (Work in progress)
+3.[PSD3](http://jrasay89.github.io/PSDImplementations/PSD3/)
 
-4.[PSD4](http://jrasay89.github.io/PSDImplementations/PSD4/) (Work in progress)
+4.[PSD4](http://jrasay89.github.io/PSDImplementations/PSD4/)
